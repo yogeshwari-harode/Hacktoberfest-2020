@@ -10,7 +10,7 @@
          //function that evaluates the digit and return result 
          function solve() 
          { 
-             let x = document.getElementById("result").value 
+             let x = document.getElementById("result").value
              let y = eval(x) 
              document.getElementById("result").value = y 
          } 
@@ -21,40 +21,72 @@
              document.getElementById("result").value = "" 
          } 
       </script> 
+       
       <!-- for styling -->
       <style> 
+          body{
+              background: linear-gradient(30deg,red ,black);
+              background-repeat: ;
+                background-blend-mode: darken;
+              position:relative;
+          }
          .title{ 
-         margin-bottom: 10px; 
-         text-align:center; 
-         width: 210px; 
-         color:green; 
-         border: solid black 2px; 
+             position:absolute;
+             top:50%;
+             left:50%;
+             transform: translate(-50%,250%);
+             text-align:center;
+             width: 210px; 
+             color:white; 
+             border: solid aliceblue 2px; 
          } 
-  
+          .mytable{
+              position:absolute;
+             top:50%;
+             left:50%;     
+               transform: translate(-50%,50%);
+              border-radius:10px;
+              background-color:white;
+          }
+          .mytable td{
+              background-color: grey;
+              padding:2px;
+          }
          input[type="button"] 
          { 
-         background-color:green; 
-         color: black; 
-         border: solid black 2px; 
-         width:100% 
+             background-color:#111; 
+             color: aliceblue;
+             font-size: 12px;
+             font-weight:bold;
+             padding:5px;
+             width: 100%;
+             border:solid black 1px;
+             border-radius:10px;
+             box-shadow: 2px 1px 0px 0px #444;
          } 
-  
+          input[type="button"]:hover{
+              background-color: aliceblue;
+              color:black;
+          }
          input[type="text"] 
          { 
-         background-color:white; 
-         border: solid black 2px; 
-         width:100% 
+            background-color:white; 
+            border: solid black 2px;
+            text-align: end;
+            padding: 5px;
+            width:100% ;
+            border-radius: 20px;
          } 
       </style> 
    </head> 
    <!-- create table -->
    <body> 
-      <div class = title >DIGITAL CALCULATOR</div> 
-      <table border="1"> 
+      <div class = "title">DIGITAL CALCULATOR</div> 
+      <table border="1px black" class="mytable"> 
          <tr> 
             <td colspan="3"><input type="text" id="result"/></td> 
             <!-- clr() function will call clr to clear all value -->
-            <td><input type="button" value="c" onclick="clr()"/> </td> 
+            <td><input type="button" value="AC" onclick="clr()" style="background-color: red;color: aliceblue;border-color: red"/> </td> 
          </tr> 
          <tr> 
             <!-- create button and assign value to each button -->
