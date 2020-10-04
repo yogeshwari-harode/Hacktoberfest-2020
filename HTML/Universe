@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		sun
+	</title>
+	<style>
+		body{
+			background-image: url(https://thumbs.gfycat.com/BriefIgnorantBlackbuck-small.gif);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+	.a{
+	width:160px ;
+	height:160px ;
+	border-radius: 90px;
+	background-image:url(https://tse2.mm.bing.net/th?id=OIP.-M0vXyB89FsSzmajCjJM3gHaEK&pid=Api&P=0&w=269&h=152);    
+	margin:150px;
+	left: 330px;
+	position: fixed;
+
+}
+.b{
+	width:60px;
+	height:60px;
+	border-radius:80px; 
+	background-image:url(https://tse4.mm.bing.net/th?id=OIP.vJmaKLlUyVdVqbvxWa1EawHaEo&pid=Api&P=0&w=269&h=169);
+	margin:205px auto ;
+	left: 140px;
+
+	position: fixed;
+
+	animation-name:planet;
+	animation-direction: forward;
+	animation-iteration-count: infinite;
+	animation-delay:2s;
+	animation-timing-function: linear;
+	animation-duration:8s;
+
+}
+@keyframes planet
+{
+	100%{left:1000px;}
+}
+
+.c{
+	width:60px;
+	height:60px;
+	border-radius:80px; 
+	background-image:url(https://tse1.mm.bing.net/th?id=OIP.HAjlMa8k2zcNuljKD_KnrwHaEL&pid=Api&P=0&w=291&h=165);
+	margin:205px auto ;
+	right: 140px;
+
+	position: fixed;
+
+	animation-name:planeta;
+	animation-direction: forward;
+	animation-iteration-count: infinite;
+	animation-delay:2s;
+	animation-timing-function: linear;
+	animation-duration:8s;
+
+}
+@keyframes planeta
+{
+	100%{right:1000px;}
+}
+
+    </style>
+</head>
+
+<body>
+	<div class="b"></div>
+	<div class="c"></div>
+	<div class="a">
+<pre>
+<i>
+<b>
+        
+      
+          Sun
+</b>
+</pre>
+</i>
+</div>
+<div class="b"></div>
+
+</body>
+</html>
