@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,count = -1;
+    cin>>n;
+    int a[n];
+    for(i=0;i<n;i++)
+        cin>>a[i];
+    for(i=0;i<n;i++,count++)
+    {
+        if(i<n-2 && a[i+2] == 0)
+            i++;
+    }
+    cout<<count;
+    return 0;
+}
