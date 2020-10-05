@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>	
+</head>
+<body>
+	<script type="text/javascript">
+			function CurrentTime()
+			{
+				var now=new Date();
+				var hours=now.getHours();
+				var mins=now.getMinutes();
+				var sec=now.getSeconds();
+				document.write(hours+":"+mins+":"+sec+"</br>");
+			}
+			setInterval("CurrentTime()"1000);
+  </script>
+</body>
+</html>
