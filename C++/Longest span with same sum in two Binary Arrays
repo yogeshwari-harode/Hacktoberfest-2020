@@ -1,0 +1,38 @@
+//..............LONGEST SPAN WITH SAME SUM IN TWO BINARY ARRAYS.....................//
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void longestspan(int a[],int b[], int n){
+    int maxlen=INT_MIN;
+    int len=0;
+    for(int i=0;i<n;i++){
+        int sum1=0,sum2=0;
+        for(int j=i;j<n;j++){
+            sum1+=a[j];
+            sum2+=b[j];
+            if(sum1==sum2)
+            len=j-i+1;
+            if(len>maxlen)
+            maxlen=len;
+        }
+    }
+    cout<<maxlen<<endl;
+    return;
+}
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    int a[100000],b[100000];
+	    cin>>n;
+	    for(int i=0;i<n;i++)
+	    cin>>a[i];
+	    for(int i=0;i<n;i++)
+	    cin>>b[i];
+	    longestspan(a,b,n);
+	}
+	return 0;
+}
