@@ -1,0 +1,59 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+//Implemented insert for creating a binary search tree
+// Also it can traverse inorder to print the BST
+
+struct node{
+    int data;
+    struct node *lc, *rc;
+};
+
+struct node *newNode(int data){
+    struct node * temp ;
+    temp=(struct node*)malloc(sizeof(struct node));
+    temp->lc=NULL;
+    temp->rc=NULL;
+    temp->data=data;
+    return temp;
+}
+
+struct node* insert(struct node * root, int data){
+    if (root==NULL) return newNode(data);
+    if(root->data > data) root->lc = insert( root->lc, data );
+    if(root->data < data) root->rc = insert( root->rc, data );
+    return root;
+}
+
+void inorderTraversal(struct node* root){
+    if(root){
+        inorderTraversal(root->lc);
+        printf("%d ",root->data);
+        inorderTraversal(root->rc);
+    }
+}
+
+
+int main()
+{
+    /* Let us create following BST 
+            50 
+          /    \ 
+        30      70 
+       /  \    /  \ 
+     20   40  60   80 */
+
+    struct node *root=NULL;
+    root = insert(root, 50); 
+    insert(root, 30); 
+    insert(root, 20); 
+    insert(root, 40); 
+    insert(root, 70); 
+    insert(root, 60); 
+    insert(root, 80);
+
+    inorderTraversal(root);
+    printf("\n");
+
+    return 0;
+}
