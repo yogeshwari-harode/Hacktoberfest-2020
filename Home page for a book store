@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME</title>
+	<style>
+		h1{
+	text-align:center;
+	color:red;
+	background-color:lightblue;
+	font-size:40px;
+}
+.Top-section{
+	word-spacing:5cm;
+	margin-left: 10px;
+	background-color:yellow;
+
+}
+.Top-section p{
+	font-size:25px;
+	background-color: lightgreen;
+}
+#info p{
+	font-weight:bold;
+	color:brown ;
+	font-family: sans-serif;
+	background-color: yellow;
+	margin-top:20px;
+	margin-right: 100px;
+	text-align: center;
+	padding:10px;
+	word-spacing:0cm;
+	float: right;
+	width:50%;
+}
+
+a{
+	color: blue;
+}
+a:hover{
+color:black;
+}
+
+#sidebar{
+	font-size:27px;
+	color:blue;
+	background-color:pink;
+	border:10px inset red;
+	width:20%;
+	height:750px;
+	padding-top:30px;
+	padding-left:30px;
+	box-sizing: border-box;
+}
+#contact{
+	word-spacing:0cm;
+}
+	</style>
+</head>
+<body>
+	<h1>BOOK STORE</h1>
+	<div class="Top-section">
+		<p>
+		<a href="homepage.html">HOME</a>
+		<a href="registration.html">Register</a>
+		<a href="login.html">Login</a>
+		<a href="catalogue.html">Catalogue</a>
+		<a href="cart.html">Cart</a></p>
+	<hr>
+	<div id="info">
+		<p>Welcome to the world's best online Book store. </p>
+		<p>The best place for the readers,writers and learners.</p>
+		<p>You can register to our website if you are a new user or login if you are registered and you will be ready to buy the books you want to read.</p>
+		<p style="text-align: center; background-color:blue;color:white;font-weight: bold">If you have any queries,you can contact us through:
+		<a style="color: white" href="http:varunj4700@gmail.com" target="blank">varunj4700@gmail.com</a></form></p>
+		<p style="text-align: center; background-color:blue;color:white;font-weight: bold">Contact No.: 9653791345</p>
+	</div>
+	<div id="sidebar">
+		<a href="catalogue.html">CSE</a>
+		<br>
+		<br>
+		<br>
+		<a href="ece.html">ECE</a>
+		<br>
+		<br>
+		<br>
+		<a href="civil.html">CIVIL</a>
+		<br>
+		<br>
+		<br>
+		<a href="mech.html">MECHANICAL</a>
+	</div>
+</div>
+</body>
+</html>
